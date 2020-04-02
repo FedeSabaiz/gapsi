@@ -14,7 +14,7 @@ export const fetchUser = async () => {
 
 export const fetchProduct = async ({categoria, pag}) => {
     try {
-        const response = await fetch(`https://node-red-nxdup.mybluemix.net/productos/${categoria}/${pagina}`, {
+        const response = await fetch(`https://node-red-nxdup.mybluemix.net/productos/${categoria}/${pag}`, {
             method: 'GET'
         });
         const res = await response.json();
