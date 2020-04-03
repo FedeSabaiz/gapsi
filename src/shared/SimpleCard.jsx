@@ -31,7 +31,7 @@ export default function SimpleCard({messWelcome, messVersion, messButton}) {
 
   return (
     <Card className={classes.root}>
-      <CardContent>
+      <CardContent >
         <Typography variant="h5" component="h2">
           {messWelcome}
         </Typography>
