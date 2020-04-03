@@ -7,13 +7,12 @@ const WelcomeCard = () => {
 
     useEffect( () => {
         const res = async() => {
-            let x = await fetchUser();
+            let x = await fetchUser('reloj', 2);
             getData(x);
 
         }
         res();
     }, []);
-    console.log(data.data )
     return (
         <SimpleCard
             messWelcome={ data.data ? data.data.welcome : null}

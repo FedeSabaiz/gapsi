@@ -5,6 +5,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import { Link } from 'react-router-dom';
 
 import img from '../img/logo.png';
 
@@ -36,7 +37,7 @@ export default function SimpleCard({messWelcome, messVersion, messButton}) {
         </Typography>
         <img src={img} alt=""/>
         <CardActions>
-            <Button size="small" color="primary">{messButton}</Button>
+            <Button size="small" color="primary"><Link to="/products" > {messButton} </Link></Button>
         </CardActions>
       </CardContent>
         <Typography variant="body2" component="p">
