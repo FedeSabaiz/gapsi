@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+
+import WelcomeCard from '../components/WelcomeCard';
 
 const Home = () => {
+
     return (
-        <h1>Iniciando prueba</h1>
+        <section style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '500px'}}>
+            <WelcomeCard />
+        </section>
     );
 }
  
